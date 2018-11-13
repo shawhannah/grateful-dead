@@ -1,16 +1,16 @@
 
 // random number 
 $(document).ready(function () {
-    var random = Math.floor(Math.random() * 102 + 19)
+    var random = Math.floor(Math.random() * 102 + 19);
 
     // show random number
     $('#randomNumber').text(random);
 
-    // random number for crystals
-    var redBear = Math.floor(Math.random() * 12 + 1)
-    var orangeBear = Math.floor(Math.random() * 12 + 1)
-    var purpleBear = Math.floor(Math.random() * 12 + 1)
-    var greenBear = Math.floor(Math.random() * 12 + 1)
+    // random number for bears
+    var redBear = Math.floor(Math.random() * 12 + 1);
+    var orangeBear = Math.floor(Math.random() * 12 + 1);
+    var purpleBear = Math.floor(Math.random() * 12 + 1);
+    var greenBear = Math.floor(Math.random() * 12 + 1);
 
     // wins, losses, and total
     var playerTotal = 0;
@@ -31,12 +31,12 @@ $(document).ready(function () {
         purpleBear = Math.floor(Math.random() * 12 + 1);
         greenBear = Math.floor(Math.random() * 12 + 1);
         playerTotal = 0;
-        $('#totalScore').text(playerTotal);
+        $('#yourNum').text(playerTotal);
     }
 
     // win alert
     function winner() {
-        alert("Crystal Collector Champion! That's you!");
+        alert("Bear Bonanza Champion! That's you!");
         wins++;
         $('#wins').text(wins);
         reset();
@@ -48,11 +48,11 @@ $(document).ready(function () {
         $('#losses').text(losses);
         reset()
     }
-    // crystals
+    // bears
     $('.red').on('click', function () {
         playerTotal = playerTotal + redBear;
         console.log("New playerTotal= " + playerTotal);
-        $('#totalScore').text(playerTotal);
+        $('#yourNum').text(playerTotal);
         //Win & lose conditions
         if (playerTotal == random) {
             winner();
@@ -61,10 +61,10 @@ $(document).ready(function () {
             loser();
         }
     })
-    $('.blue').on('click', function () {
+    $('.orange').on('click', function () {
         playerTotal = playerTotal + orangeBear;
         console.log("New playerTotal= " + playerTotal);
-        $('#totalScore').text(playerTotal);
+        $('#yourNum').text(playerTotal);
         if (playerTotal == random) {
             winner();
         }
@@ -72,10 +72,10 @@ $(document).ready(function () {
             loser();
         }
     })
-    $('.yellow').on('click', function () {
+    $('.purple').on('click', function () {
         playerTotal = playerTotal + purpleBear;
         console.log("New playerTotal= " + playerTotal);
-        $('#totalScore').text(playerTotal);
+        $('#yourNum').text(playerTotal);
 
         if (playerTotal == random) {
             winner();
@@ -87,7 +87,7 @@ $(document).ready(function () {
     $('.green').on('click', function () {
         playerTotal = playerTotal + greenBear;
         console.log("New playerTotal= " + playerTotal);
-        $('#totalScore').text(playerTotal);
+        $('#yourNum').text(playerTotal);
 
         if (playerTotal == random) {
             winner();

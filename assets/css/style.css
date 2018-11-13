@@ -1,0 +1,19 @@
+.bear-title {
+    letter-spacing: 4px;
+    color: #EF9C00;
+    background-color: #662A84;
+    font-weight: bold;
+}
+
+.bear-subtitle {
+    color: #EF9C00;
+    background-color: #662A84;
+}
+
+.main-block {
+    background-color: #662A84!important;
+}
+
+.last-row {
+    margin-bottom: 25px;
+}

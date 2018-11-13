@@ -3,20 +3,24 @@
 
 <head>
     <meta charset="utf-8">
-    <title>Crystal Collector</title>
+    <title>Bear Bonanza Game</title>
     <link rel="stylesheet" type="text/css" href="assets/css/reset.css" />
-    <link rel="stylesheet" href="assets/css/style.css" />
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
         crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="assets/css/style.css" />
 
 
 </head>
 
 <body>
-    <div class="jumbotron jumbotron-fluid">
-        <div class="container">
-            <h1 class="display-4">CRYSTAL COLLECTOR</h1>
-            <p class="lead">see if you can collect them all without going over your number</p>
+    <div class="jumbotron jumbotron-fluid main-block">
+        <div class="container main-block">
+            <h1 class="display-4 bear-title">BEAR BONANZA</h1>
+            <p class="lead bear-subtitle">see if you can collect them all without going over your number</p>
         </div>
     </div>
 
@@ -24,8 +28,10 @@
         <div class="row">
             <div class="col-sm-12 instructions">
                 <h2>how to play</h2>
-                <p>At the start of the game, you'll be assigned a random number. Below your number are four crystals. Each crystal has a random value. Each time you click a crystal, that value is added to your total score. </p>
-                <p>Try to get your score as close to the random number as you can without going over. If you match your score to the random number, you're the Crysal Collector Champion!</p>
+                <p>At the start of the game, you'll be assigned a random number. Below your number are four bears. Each
+                    bear has a random value. Each time you click a bear, that value is added to your total score. </p>
+                <p>Try to get your score as close to the random number as you can without going over. If you match your
+                    score to the random number, you're the Bear Bonanza Champion!</p>
             </div>
         </div>
 
@@ -41,25 +47,25 @@
 
         <div class="row text-center">
             <div class="col-sm-3">
-                <img src="assets/images/red-crystal.jpg" class="img-thumnail red" alt="Red Crystal" width="200" height="200" />
+                <img src="assets/images/RED BEAR _.jpg" class="img-thumnail red" alt="Red Bear" width="200" height="200" />
             </div>
             <div class="col-sm-3">
-                <img src="assets/images/blue-crystal.jpg" class="img-thumbnail blue" alt="Blue Crystal" width="200"
+                <img src="assets/images/ORANGE BEAR _.jpg" class="img-thumbnail orange" alt="Orange Bear" width="200"
                     height="200" />
             </div>
             <div class="col-sm-3">
-                <img src="assets/images/yellow-crystal.jpg" class="img-thumnail yellow" alt="Yellow Crystal" width="200"
+                <img src="assets/images/PURPLE BEAR _.jpg" class="img-thumnail purple" alt="Purple Bear" width="200"
                     height="200" />
             </div>
             <div class="col-sm-3">
-                <img src="assets/images/green-crystal.jpg" class="img-thumnail green" alt="Green Crystal" width="200"
+                <img src="assets/images/GREEN BEAR _.jpg" class="img-thumnail green" alt="Green Bear" width="200"
                     height="200" />
             </div>
         </div>
 
-        <div class="row">
+        <div class="row last-row">
             <div class="col-sm-12">
-                <h2>your score: <span id="totalScore"></span></h2>
+                <h2>your number: <span id="yourNum"></span></h2>
             </div>
         </div>
     </div>
