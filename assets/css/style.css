@@ -11,9 +11,30 @@
 }
 
 .main-block {
-    background-color: #662A84!important;
+    background-color: #662A84;
 }
 
-.last-row {
+.your-row {
     margin-bottom: 25px;
+}
+
+.photo-row {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#randomNumber {
+    color: #662A84;
+}
+
+#losses {
+    color: #662A84;
+}
+
+#yourNum {
+    color: #662A84;
+}
+
+#wins {
+    color: #662A84;
 }

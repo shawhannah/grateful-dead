@@ -8,7 +8,7 @@ $(document).ready(function () {
 
     // random number for bears
     var redBear = Math.floor(Math.random() * 12 + 1);
-    var yellowBear = Math.floor(Math.random() * 12 + 1);
+    var blueBear = Math.floor(Math.random() * 12 + 1);
     var purpleBear = Math.floor(Math.random() * 12 + 1);
     var greenBear = Math.floor(Math.random() * 12 + 1);
 
@@ -27,7 +27,7 @@ $(document).ready(function () {
         console.log(random)
         $('#randomNumber').text(random);
         redBear = Math.floor(Math.random() * 12 + 1);
-        yellowBear = Math.floor(Math.random() * 12 + 1);
+        blueBear = Math.floor(Math.random() * 12 + 1);
         purpleBear = Math.floor(Math.random() * 12 + 1);
         greenBear = Math.floor(Math.random() * 12 + 1);
         playerTotal = 0;
@@ -61,8 +61,8 @@ $(document).ready(function () {
             loser();
         }
     })
-    $('.yellow').on('click', function () {
-        playerTotal = playerTotal + yellowBear;
+    $('.blue').on('click', function () {
+        playerTotal = playerTotal + blueBear;
         console.log("New playerTotal= " + playerTotal);
         $('#yourNum').text(playerTotal);
         if (playerTotal == random) {
