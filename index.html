@@ -1,79 +1,121 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="utf-8">
+  <head>
+    <meta charset="utf-8" />
     <title>Bear Bonanza Game</title>
     <link rel="stylesheet" type="text/css" href="assets/css/reset.css" />
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
-        crossorigin="anonymous">
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-        crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
-        crossorigin="anonymous"></script>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+      integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+      integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+      crossorigin="anonymous"
+    ></script>
     <link rel="stylesheet" href="assets/css/style.css" />
+  </head>
 
-
-</head>
-
-<body>
+  <body>
     <div class="jumbotron jumbotron-fluid main-block">
-        <div class="container main-block">
-            <h1 class="display-4 bear-title">BEAR BONANZA</h1>
-            <p class="lead bear-subtitle">see if you can collect them all without going over your number</p>
-        </div>
+      <div class="container main-block">
+        <h1 class="display-4 bear-title">BEAR BONANZA</h1>
+        <p class="lead bear-subtitle">
+          see if you can collect them all without going over your number
+        </p>
+      </div>
     </div>
 
     <div class="container-fluid">
-        <div class="row">
-            <div class="col-sm-12 instructions">
-                <h2>how to play</h2>
-                <p>At the start of the game, you'll be assigned a random number. Below your number are four bears. Each
-                    bear has a random value. Each time you click a bear, that value is added to your total score. </p>
-                <p>Try to get your score as close to the random number as you can without going over. If you match your
-                    score to the random number, you're the Bear Bonanza Champion!</p>
-            </div>
+      <div class="row">
+        <div class="col-sm-12 instructions">
+          <h2>how to play</h2>
+          <p>
+            At the start of the game, you'll be assigned a random number. Below
+            your number are four bears. Each bear has a random value. Each time
+            you click a bear, that value is added to your total score.
+          </p>
+          <p>
+            Try to get your score as close to the random number as you can
+            without going over. If you match your score to the random number,
+            you're the Bear Bonanza Champion!
+          </p>
         </div>
-
-        <div class="row">
-            <div class="col-sm-9">
-                <h2>random number: <span id="randomNumber"></span></h2>
-                <h2>your number: <span id="yourNum"></span></h2>
-            </div>
-            <div class="col-sm-3">
-                <h3>wins: <span id="wins"></span></h3>
-                <h3 class="text-left">losses: <span id="losses"></span></h3>
-            </div>
+      </div>
+      <br />
+      <div class="row">
+        <div class="col-sm-6 numbers-text">
+          <h2>random number: <span id="randomNumber"></span></h2>
+          <h2>your number: <span id="yourNum"></span></h2>
         </div>
-        <br>
-        <div class="row photo-row text-center">
-            <div class="col-sm-3">
-                <img src="assets/images/RED BEAR _.jpg" class="img-thumnail red" alt="Red Bear" width="300" height="300" />
-            </div>
-            <div class="col-sm-3">
-                <img src="assets/images/BLUE BEAR_.jpg" class="img-thumnail blue" alt="Blue Bear" width="300" height="300" />
-            </div>
-            <div class="col-sm-3">
-                <img src="assets/images/PURPLE BEAR _.jpg" class="img-thumnail purple" alt="Purple Bear" width="300"
-                    height="300" />
-            </div>
-            <div class="col-sm-3">
-                <img src="assets/images/GREEN BEAR _.jpg" class="img-thumnail green" alt="Green Bear" width="300"
-                    height="300" />
-            </div>
+        <div class="col-sm-6 totals-text">
+          <h3>wins: <span id="wins"></span></h3>
+          <h3>losses: <span id="losses"></span></h3>
         </div>
+      </div>
+      <br />
+      <div class="row photo-row text-center">
+        <div class="col-sm-3">
+          <img
+            src="assets/images/RED BEAR _.jpg"
+            class="img-thumnail red"
+            alt="Red Bear"
+            width="300"
+            height="300"
+          />
+        </div>
+        <div class="col-sm-3">
+          <img
+            src="assets/images/BLUE BEAR_.jpg"
+            class="img-thumnail blue"
+            alt="Blue Bear"
+            width="300"
+            height="300"
+          />
+        </div>
+        <div class="col-sm-3">
+          <img
+            src="assets/images/PURPLE BEAR _.jpg"
+            class="img-thumnail purple"
+            alt="Purple Bear"
+            width="300"
+            height="300"
+          />
+        </div>
+        <div class="col-sm-3">
+          <img
+            src="assets/images/GREEN BEAR _.jpg"
+            class="img-thumnail green"
+            alt="Green Bear"
+            width="300"
+            height="300"
+          />
+        </div>
+      </div>
     </div>
+  </body>
 
-
-</body>
-
-<script src="assets/javascript/game.js"></script>
-<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-    crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
-    crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
-    crossorigin="anonymous"></script>
-
-
+  <script src="assets/javascript/game.js"></script>
+  <script
+    src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"
+  ></script>
+  <script
+    src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+    integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+    crossorigin="anonymous"
+  ></script>
+  <script
+    src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+    integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+    crossorigin="anonymous"
+  ></script>
 </html>

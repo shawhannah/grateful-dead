@@ -1,40 +1,57 @@
 .bear-title {
-    letter-spacing: 4px;
-    color: #EF9C00;
-    background-color: #662A84;
-    font-weight: bold;
+  letter-spacing: 4px;
+  color: red;
+  background-color: #662a84;
+  font-weight: bold;
 }
 
 .bear-subtitle {
-    color: #EF9C00;
-    background-color: #662A84;
+  color: red;
+  background-color: #662a84;
 }
 
 .main-block {
-    background-color: #662A84;
+  background-color: #662a84;
+}
+
+.instructions {
+  color: #662a84;
+}
+
+.numbers-text {
+  color: #662a84;
+}
+
+h2 {
+  font-weight: bold;
+}
+
+h3 {
+  font-weight: bold;
+  color: #662a84;
 }
 
 .your-row {
-    margin-bottom: 25px;
+  margin-bottom: 25px;
 }
 
 .photo-row {
-    display: flex;
-    justify-content: space-evenly;
+  display: flex;
+  justify-content: space-evenly;
 }
 
 #randomNumber {
-    color: #662A84;
+  color: #662a84;
 }
 
 #losses {
-    color: #662A84;
+  color: #662a84;
 }
 
 #yourNum {
-    color: #662A84;
+  color: #662a84;
 }
 
 #wins {
-    color: #662A84;
+  color: #662a84;
 }
